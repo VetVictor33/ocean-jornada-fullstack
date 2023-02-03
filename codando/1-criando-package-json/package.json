@@ -1,0 +1,12 @@
+{
+  "name": "1-criando-package-json",
+  "version": "1.0.0",
+  "description": "inicia o projeto json( o '-y' serve para responder yes para todas as perguntas)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
