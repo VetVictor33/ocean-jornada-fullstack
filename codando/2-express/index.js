@@ -75,11 +75,15 @@ async function main() {
             { _id: new ObjectId(id) }, //enviando o id do item que será editado
             { $set: body }, //body com o item editado
         );
-
         res.send(body);
     });
 
     // Endpoint delet -> [DELETE] /item/:id
+    app.delete("/item/:id", async function (req, res) {
+        const id = req.params.id;
+        const item = await collection.deleteOne({ _id: new ObjectId(id) });
+        res.send(item);
+    });
 
     app.listen(3000);
 
